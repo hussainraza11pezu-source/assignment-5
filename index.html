@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+</head>
+<body>
+
+    <h1>Job Application Form</h1>
+
+    <form>
+
+        <!-- 1. Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" placeholder="Enter your full name" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" placeholder="03xx-xxxxxxx" required><br><br>
+
+            <label for="website">Website or Portfolio:</label><br>
+            <input type="url" id="website" placeholder="https://yourwebsite.com"><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" required><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- 2. Job Details -->
+        <fieldset>
+            <legend>Job Details</legend>
+
+            <label for="position">Job Position:</label><br>
+            <select id="position" required>
+                <option value="">Select Position</option>
+                <option>Frontend Developer</option>
+                <option>Backend Developer</option>
+                <option>UI/UX Designer</option>
+                <option>QA Engineer</option>
+            </select><br><br>
+
+            <p>Preferred Work Location:</p>
+            <input type="radio" name="location" id="onsite" required>
+            <label for="onsite">On-site</label><br>
+            <input type="radio" name="location" id="remote">
+            <label for="remote">Remote</label><br>
+            <input type="radio" name="location" id="hybrid">
+            <label for="hybrid">Hybrid</label><br><br>
+
+            <p>Skills:</p>
+            <input type="checkbox" id="html">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="css">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" id="js">
+            <label for="js">JavaScript</label><br>
+            <input type="checkbox" id="react">
+            <label for="react">React</label><br>
+            <input type="checkbox" id="node">
+            <label for="node">Node.js</label><br><br>
+
+            <label for="resume">Resume Upload:</label><br>
+            <input type="file" id="resume" required><br><br>
+
+            <label for="about">Write About Yourself:</label><br>
+            <textarea id="about" rows="4" cols="40" placeholder="Tell us about yourself..." required></textarea><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- 3. Extra Section -->
+        <fieldset>
+            <legend>Extra Section</legend>
+
+            <label for="search">Search your favorite tech stack:</label><br>
+            <input type="search" id="search" placeholder="Search..."><br><br>
+
+            <label for="pass">Password:</label><br>
+            <input type="password" id="pass" placeholder="Enter password" required><br><br>
+
+            <label for="cpass">Confirm Password:</label><br>
+            <input type="password" id="cpass" placeholder="Confirm password" required><br><br>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
